@@ -1,5 +1,10 @@
-const flatten = function(array) {
-  return array.flat();
+const middle = function(array) {
+  const middleNum = Math.round(array.length / 2);
+  const length = array.length;
+  if (length <= 2) return [];
+  if (length % 2 === 0) {
+    return [array[middleNum - 1], array[middleNum]];
+  } else return [array[middleNum - 1]];
 };
 
 const assertArraysEqual = function(givenArr, expectedArr) {
@@ -22,4 +27,6 @@ const eqArrays = function(firstArray, secondArray) {
   return true;
 };
 
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]),[1, 2, 3, 4, 5, 6]);
+assertArraysEqual(middle([1, 2]), []);
+assertArraysEqual(middle([1, 2, 3, 4, 5]),  [3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
