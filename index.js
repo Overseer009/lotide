@@ -14,6 +14,7 @@ const letterPosition        = require('./letterPosition');
 const map                   = require('./map');
 const takeUntil             = require('./takeUntil');
 const without               = require('./without');
+const flatten               = require('./flatter')
 
 module.exports = {
   assertArraysEqual,
@@ -31,5 +32,6 @@ module.exports = {
   middle,
   tail,
   takeUntil,
-  without
+  without,
+  flatten
 };
