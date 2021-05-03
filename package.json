@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@overseer009/lotide",
+  "version": "1.0.1",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "mocha"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/Overseer009/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sacha Sunnasy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Overseer009/lotide/issues"
